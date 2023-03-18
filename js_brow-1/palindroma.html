@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindroma</title>
+</head>
+
+<body id="body" style="background-color: cornflowerblue;">
+
+    <label for="texto">Escribe una palabra:</label>
+    <input type="text" id="texto">
+    <button class="btn">Palindroma ? </button>
+    <div class="div_t">
+        <p id="resultado"></p>
+    </div>
+    <script>
+        const body = document.querySelector("#body");
+        const input = document.querySelector("#texto");
+        const button = document.querySelector(".btn");
+        const resultado = document.querySelector("#resultado");
+        const div_t = document.querySelector(".div_t")
+        button.addEventListener("click", function () {
+
+            const palabra = input.value.toLowerCase().replace(/[^a-z0-9]/g, '');
+            const invertida = palabra.split('').reverse().join('');
+
+            if (palabra === invertida) {
+                resultado.textContent = "La palabra  ES un palíndromo" + "\u{1F600} ";;
+                div_t.style.backgroundColor = "#2ECC71";
+            } else {
+                resultado.textContent = "La palabra NO es un palíndromo" + "\u{1F622}";;
+                div_t.style.backgroundColor = "#95A5A6";
+            }
+        });
+    </script>
+</body>
+
+</html>
