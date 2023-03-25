@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/css/fondo.png");
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container_all {
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    
+}
+
+#container_add {
+
+    left: 50%;
+    background-color: #8ecae6;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.material-icons{
+height: 30px;
+font-size: 100px;
+background-color: #f72585;
+color: yellow;
+border-radius: 40px;
+}
+
+.input_add {
+    padding: 10px;
+    margin: 20px;
+    width: 600px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+.boton_add {
+
+    background: linear-gradient(#f72585, #ff70a6);
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+    color: yellow;
+}
+
+#container_list {
+    position: relative;
+    margin: 10px 0px;
+    background-color: antiquewhite;
+    height: 500px;
+}
+
+.lista {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+li {
+    font-size: 25px;
+    margin: 20px 7px;
+
+}
+
+input {
+
+    width: 50px;
+}
+
+
+
+#container_eraser {
+    position: relative;
+    background-color: #8ecae6;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.boton_eraser {
+    position: relative;
+    background: linear-gradient(#f72585, #ff70a6);
+    border-radius: 15px;
+    color: yellow;
+    height: 30px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}

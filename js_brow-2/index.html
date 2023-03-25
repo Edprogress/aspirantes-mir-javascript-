@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container_all">
+        <h1>Lista de tareas pendientes</h1>
+        <div id="container_add">
+            <span id="compleatados" class="material-icons">
+                check_circle
+            </span>
+            <span id="nocompletados" class="material-icons">
+                highlight_off
+            </span>
+
+            <input class="input_add" type="text" placeholder="Ingresa nueva tarea">
+            <button class="boton_add" type="submit">ADD</button>
+        </div>
+        <hr>
+        <div id="container_list">
+            <ul class="lista">
+
+            </ul>
+        </div>
+        <hr>
+        <div id="container_eraser">
+            <button class="boton_eraser" type="reset"><img src="trush.png" alt=""> Clear All <img src="trush.png"
+                    alt=""></button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
