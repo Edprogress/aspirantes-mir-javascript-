@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Guardar nombre y correo en localStorage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Pracitce with localstogare</h1>
+    <h1>Save name and email in localStorage</h1>
+    <form>
+        <label for="nombre">Enter your name:</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+        <button type="submit" id="guardar">Save</button>
+    </form>
+    <section>
+        <h2>Name and email in localStorage</h2>
+        <div id="nombre-guardado"></div>
+        <div id="email-guardado"></div>
+        <button type="button" id="borrar">Delete data</button>
+    </section>
+    <script src="localstogare.js"></script>
+</body>
+
+</html>
